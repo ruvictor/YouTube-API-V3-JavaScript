@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YouTube API V3</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+	<style>
+		#content,#enter-button,#exit-button{display: none;}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<p>Login with Google</p>
+		<button class="btn green" id="enter-button">Log In</button>
+		<button class="btn green" id="exit-button">Log Out</button>
+		<br />
+		<div id="content">
+			<div class="row">
+				<div id="channel-data" class="col s12"></div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+	<script src="script.js"></script>
+	<script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+</body>
+</html>
